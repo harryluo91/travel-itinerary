@@ -1,20 +1,17 @@
 <timeline>
-  <timeline-event>
-    <timeline-badge class="{{event.badgeClass}}">
-      <i class="glyphicon {{event.badgeIconClass}}"></i>
-    </timeline-badge>
-    <timeline-panel class="{{event.badgeClass}}">
+  <timeline-event class="col-sm-5">
+    <timeline-panel class="col-sm-12 {{event.badgeClass}}">
       <timeline-heading>
         <h4>{{event.title}}</h4>
       </timeline-heading>
       <p>{{event.content}}</p>
     </timeline-panel>
   </timeline-event>
-  <timeline-event side="right">
-    <timeline-badge class="{{event.badgeClass}}">
-      <i class="glyphicon {{event.badgeIconClass}}"></i>
-    </timeline-badge>
-    <timeline-panel class="{{event.badgeClass}}">
+  <timeline-badge class="{{event.badgeClass}}">
+    <i class="glyphicon {{event.badgeIconClass}}"></i>
+  </timeline-badge>
+  <timeline-event class="col-sm-5 timeline-inverted">
+    <timeline-panel class="col-sm-12 {{event.badgeClass}}">
       <timeline-heading>
         <h4>{{event.title}}</h4>
       </timeline-heading>
