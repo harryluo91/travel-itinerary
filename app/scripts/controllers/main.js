@@ -1,18 +1,9 @@
-'use strict';
-
-/**
- * @ngdoc function
- * @name travelItineraryApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the travelItineraryApp
- */
 angular.module('travelItineraryApp')
-  .controller('MainCtrl', function () {
-    console.log('hello');
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope', function($scope) {
+    $scope.event = {
+      badgeClass: 'info',
+      badgeIconClass: 'glyphicon-check',
+      title: 'First heading',
+      content: 'Some awesome content.'
+    };
+  }]);
