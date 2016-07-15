@@ -4,7 +4,16 @@
       <timeline-heading>
         <h4>{{event.title}}</h4>
       </timeline-heading>
-      <p>{{event.content}}</p>
+      <div style="height: 305px">
+        <uib-carousel no-wrap="noWrapSlides">
+          <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" active="slide.active">
+            <img ng-src="{{slide.image}}" style="margin:auto;">
+          </uib-slide>
+        </uib-carousel>
+      </div>
+      <div class="day-detail">
+        {{currentDayDetail}}
+      </div>
     </timeline-panel>
   </timeline-event>
   <timeline-badge class="{{event.badgeClass}}">
