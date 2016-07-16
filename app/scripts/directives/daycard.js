@@ -11,6 +11,11 @@ angular.module('travelItineraryApp')
     var dayCardController = ['$scope', '$sce', function($scope, $sce) {
       var self = this;
       self.day = $scope.day;
+      self.pointOfInterest = $scope.day.pointOfInterest;
+      self.pointOfInterest.map(el => {
+        console.log(el);
+        el.details = $sce.trustAsHtml(el.details);
+      })
       $scope.myInterval = 5000;
       $scope.noWrapSlides = false;
       $scope.dayOverview = $sce.trustAsHtml(self.day.timelineInfo.dayOverview);

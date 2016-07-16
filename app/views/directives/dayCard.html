@@ -4,7 +4,10 @@
       <timeline-heading>
         <div ng-bind-html="dayOverview"></div>
       </timeline-heading>
-      <div class="point-of-interest" ng-repeat="poi in ctrl.day.pointOfInterest">
+      <div class="point-of-interest" ng-repeat="poi in ctrl.pointOfInterest">
+        <div class="poi-header text-center">
+          <h4>{{poi.title}}</h4>
+        </div>
         <div class="carousel-wrapper">
           <uib-carousel no-wrap="noWrapSlides">
             <uib-slide ng-repeat="slide in poi.slides" index="slide.id">
@@ -13,7 +16,7 @@
           </uib-carousel>
         </div>
         <div class="day-detail">
-          {{poi.details}}
+          <div ng-bind-html="poi.details"></div>
         </div>
       </div>
     </timeline-panel>
