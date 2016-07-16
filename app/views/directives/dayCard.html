@@ -1,30 +1,32 @@
 <timeline>
   <timeline-event class="col-sm-5">
-    <timeline-panel class="col-sm-12 {{event.badgeClass}}">
+    <timeline-panel class="col-sm-12">
       <timeline-heading>
-        <h4>{{event.title}}</h4>
+        <div ng-bind-html="dayOverview"></div>
       </timeline-heading>
-      <div style="height: 305px">
-        <uib-carousel no-wrap="noWrapSlides">
-          <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" active="slide.active">
-            <img ng-src="{{slide.image}}" style="margin:auto;">
-          </uib-slide>
-        </uib-carousel>
-      </div>
-      <div class="day-detail">
-        {{currentDayDetail}}
+      <div class="point-of-interest" ng-repeat="poi in ctrl.day.pointOfInterest">
+        <div class="carousel-wrapper">
+          <uib-carousel no-wrap="noWrapSlides">
+            <uib-slide ng-repeat="slide in poi.slides" index="slide.id">
+              <img ng-src="{{slide.image}}" style="margin:auto;">
+            </uib-slide>
+          </uib-carousel>
+        </div>
+        <div class="day-detail">
+          {{poi.details}}
+        </div>
       </div>
     </timeline-panel>
   </timeline-event>
-  <timeline-badge class="{{event.badgeClass}}">
-    <i class="glyphicon {{event.badgeIconClass}}"></i>
+  <timeline-badge class="">
+    <i class="glyphicon info"></i>
   </timeline-badge>
   <timeline-event class="col-sm-5 timeline-inverted">
-    <timeline-panel class="col-sm-12 {{event.badgeClass}}">
+    <timeline-panel class="col-sm-12">
       <timeline-heading>
-        <h4>{{event.title}}</h4>
+        <h4>something</h4>
       </timeline-heading>
-      <p>{{event.content}}</p>
+      <p>something else</p>
     </timeline-panel>
   </timeline-event>
 </timeline>
