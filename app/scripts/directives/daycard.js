@@ -22,7 +22,7 @@ angular.module('travelItineraryApp')
     }];
 
     return {
-      templateUrl: '../../views/directives/dayCard.html',
+      templateUrl: 'views/directives/dayCard.html',
       restrict: 'E',
       scope: {
         day: '='

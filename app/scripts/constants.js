@@ -24,13 +24,13 @@ angular
                 '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/place/Carleton+Martello+Tower+National+Historic+Park/@45.251527,-66.0790194,17z/data=!3m1!4b1!4m5!3m4!1s0x4ca7b4f47c916c55:0x98287c8a7c72700!8m2!3d45.2515232!4d-66.0768254?hl=en">454 Whipple St, Saint John, NB</a></p>  ' +
                 '  <p class="col-sm-12">Suggested Duration: 30 mins</p>  ',
             slides: [{
-                image: '../images/day1/1-1.jpg'
+                image: 'images/day1/1-1.jpg'
             }, {
-                image: '../images/day1/1-2.jpg'
+                image: 'images/day1/1-2.jpg'
             }, {
-                image: '../images/day1/1-3.jpg'
+                image: 'images/day1/1-3.jpg'
             }, {
-                image: '../images/day1/1-4.jpg'
+                image: 'images/day1/1-4.jpg'
             }]
         }, {
             title: 'Reversing Falls',
@@ -39,13 +39,13 @@ angular
                 '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/place/Reversing+Falls/@45.2602293,-66.0988683,15z/data=!3m1!4b1!4m5!3m4!1s0x4ca7b4959817aa3f:0x718dfc6ad823909f!8m2!3d45.2602151!4d-66.0900921?hl=en">Reversing Falls, Saint John, NB</a></p>  ' +
                 '  <p class="col-sm-12">Suggested Duration: 30 mins</p>  ',
             slides: [{
-                image: '../images/day1/1-5.jpg'
+                image: 'images/day1/1-5.jpg'
             }, {
-                image: '../images/day1/1-6.jpg'
+                image: 'images/day1/1-6.jpg'
             }, {
-                image: '../images/day1/1-7.jpg'
+                image: 'images/day1/1-7.jpg'
             }, {
-                image: '../images/day1/1-8.jpg'
+                image: 'images/day1/1-8.jpg'
             }]
         }, {
             title: 'Other Things',
@@ -98,13 +98,13 @@ angular
                 '   <p class="col-sm-12">Suggested Duration: 1 - 2 hours</p>  ' +
                 '  <p class="col-sm-12">Notes: can get very crowded depending on the day, go early if you wanna take good photos</p>  ',
             slides: [{
-                image: '../images/day2/2-1.jpg'
+                image: 'images/day2/2-1.jpg'
             }, {
-                image: '../images/day2/2-2.jpg'
+                image: 'images/day2/2-2.jpg'
             }, {
-                image: '../images/day2/2-3.jpg'
+                image: 'images/day2/2-3.jpg'
             }, {
-                image: '../images/day2/2-4.jpg'
+                image: 'images/day2/2-4.jpg'
             }]
         }, {
             title: 'Road to Charlottetown',
@@ -122,13 +122,13 @@ angular
                 '       <li>St Dunstan\'s Basilica (the other church like photo)</li>  ' +
                 '  </ul>  ',
             slides: [{
-                image: '../images/day2/2-5.jpg'
+                image: 'images/day2/2-5.jpg'
             }, {
-                image: '../images/day2/2-6.jpg'
+                image: 'images/day2/2-6.jpg'
             }, {
-                image: '../images/day2/2-7.jpg'
+                image: 'images/day2/2-7.jpg'
             }, {
-                image: '../images/day2/2-8.jpg'
+                image: 'images/day2/2-8.jpg'
             }]
         }],
         generalInfo: {
@@ -168,7 +168,7 @@ angular
                 '   <p class="col-sm-12">Suggested Duration: 20 min</p>  ' +
                 '   <p class="col-sm-12">Hours: 9:00am - 5:00pm</p>  ',
             slides: [{
-                image: '../images/day3/3-1.jpg'
+                image: 'images/day3/3-1.jpg'
             }]
         }, {
             title: 'Cavendish Beach and PEI National Park',
@@ -178,11 +178,11 @@ angular
                 '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/place/Cavendish,+PE/@46.4912749,-63.3874502,15z/am=t/data=!3m1!4b1!4m5!3m4!1s0x4b5fbf9f119031fd:0xa6378ec95c4735db!8m2!3d46.491261!4d-63.378674?hl=en">Cavendish, PE</a></p>  ' +
                 '  <p class="col-sm-12">Suggested Duration: 2 - 3 h</p>  ',
             slides: [{
-                image: '../images/day3/3-2.jpg'
+                image: 'images/day3/3-2.jpg'
             }, {
-                image: '../images/day3/3-3.jpg'
+                image: 'images/day3/3-3.jpg'
             }, {
-                image: '../images/day3/3-4.jpg'
+                image: 'images/day3/3-4.jpg'
             }]
         }, {
             title: 'Other Things',
@@ -237,7 +237,7 @@ angular
                 '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/dir/Sydney,+NS/Louisbourg,+NS/@46.0289925,-60.2196722,11z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4b67fb367e723415:0xa783539b7b308087!2m2!1d-60.194224!2d46.1367899!1m5!1m1!1s0x4b681d548cc3216d:0x542178588b5ea4dd!2m2!1d-59.9713119!2d45.9221352">Louisbourg</a></p>  ' +
                 '  <p class="col-sm-12">Suggested Duration: 30 min to 1 hour</p>  ',
             slides: [{
-                image: '../images/day4/4-1.jpg'
+                image: 'images/day4/4-1.jpg'
             }]
         }, {
             title: 'Around Sydney - Dominion Beach',
@@ -246,7 +246,7 @@ angular
                 '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/dir/Sydney,+NS/Dominion+Beach+Provincial+Park,+Nova+Scotia/@46.184019,-60.1888447,12z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4b67fb367e723415:0xa783539b7b308087!2m2!1d-60.194224!2d46.1367899!1m5!1m1!1s0x4b67e12ecf48d0b5:0x7cc6506b7caccd01!2m2!1d-60.0407417!2d46.2216041"> Dominion Beach Provincial Park</a></p>  ' +
                 '  <p class="col-sm-12">Suggested Duration: 30 min to 1 hour</p>  ',
             slides: [{
-                image: '../images/day4/4-2.jpg'
+                image: 'images/day4/4-2.jpg'
             }]
         }],
         generalInfo: {
@@ -280,7 +280,7 @@ angular
                 '       <a target="_blank" href="https://www.tripadvisor.ca/Attraction_Review-g499216-d186976-Reviews-Cape_Breton_Highlands_National_Park-Ingonish_Cape_Breton_Island_Nova_Scotia.html">Link</a>  ' +
                 '  </p>  ',
             slides: [{
-                image: '../images/day5/5-1.png'
+                image: 'images/day5/5-1.png'
             }]
         }, {
             title: 'Cabot Trail - Ingonish',
@@ -294,11 +294,11 @@ angular
                 '       <li><a target="_blank" href="https://www.tripadvisor.ca/Attraction_Review-g499216-d4596907-Reviews-Chutes_Mary_Ann_Falls-Ingonish_Cape_Breton_Island_Nova_Scotia.html">Chutes Mary Ann Falls</a></li>  ' +
                 '  </ul>  ',
             slides: [{
-                image: '../images/day5/5-2.jpg',
+                image: 'images/day5/5-2.jpg',
             }, {
-                image: '../images/day5/5-3.jpg',
+                image: 'images/day5/5-3.jpg',
             }, {
-                image: '../images/day5/5-4.jpg',
+                image: 'images/day5/5-4.jpg',
             }]
         }, {
             title: 'Cabot Trail - Neil\'s Harbour',
@@ -310,7 +310,7 @@ angular
                 '       <li><a target="_blank" href="https://www.tripadvisor.ca/Attraction_Review-g499216-d7196077-Reviews-Ingonish_Beach-Ingonish_Cape_Breton_Island_Nova_Scotia.html">Lighthouse Ice Cream Parlour</a></li>  ' +
                 '  </ul>  ',
             slides: [{
-                image: '../images/day5/5-5.jpg',
+                image: 'images/day5/5-5.jpg',
             }]
         }, {
             title: 'Cabot Trail - Pleasant Bay',
@@ -322,7 +322,7 @@ angular
                 '       <li>Washroom breaks + buy supplies</li>  ' +
                 '  </ul>  ',
             slides: [{
-                image: '../images/day5/5-6.png',
+                image: 'images/day5/5-6.png',
             }]
         }, {
             title: 'Cabot Trail - Skyline Trail',
@@ -334,9 +334,9 @@ angular
                 '       <li>Two paths are available, depending on the time and your energy, choose the one that best suits, you will see the most beautiful part of the trail in both the of the paths</li>  ' +
                 '  </ul>  ',
             slides: [{
-                image: '../images/day5/5-7.png',
+                image: 'images/day5/5-7.png',
             }, {
-                image: '../images/day5/5-8.png',
+                image: 'images/day5/5-8.png',
             }]
         }],
         generalInfo: {
@@ -377,13 +377,13 @@ angular
                 '       <li>Get back before dark, I think some of the roads don\'t have lights, and choose a different route to drive back if you don\'t like to travel the same route like me.</li>  ' +
                 '  </ul>  ',
             slides: [{
-                image: '../images/day6/6-1.png'
+                image: 'images/day6/6-1.png'
             }, {
-                image: '../images/day6/6-2.png'
+                image: 'images/day6/6-2.png'
             }, {
-                image: '../images/day6/6-3.png'
+                image: 'images/day6/6-3.png'
             }, {
-                image: '../images/day6/6-4.png'
+                image: 'images/day6/6-4.png'
             }]
         }, {
             title: 'The City of Halifax',
@@ -397,9 +397,9 @@ angular
                 '       <li>Halifax Titanic Historical Tours (recommended by a lot of people, if you are very interested in the city\'s history and ofcourse, Titanic)</li>  ' +
                 '  </ul>  ',
             slides: [{
-                image: '../images/day6/6-5.jpg',
+                image: 'images/day6/6-5.jpg',
             }, {
-                image: '../images/day6/6-6.png',
+                image: 'images/day6/6-6.png',
             }]
         }],
         generalInfo: {
