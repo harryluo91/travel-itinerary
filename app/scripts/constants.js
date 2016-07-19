@@ -352,4 +352,65 @@ angular
                 '   <p class="col-sm-12"><strong>Resturants</strong> - <a target="_blank" href="https://www.yelp.ca/search?find_desc=Restaurants&find_loc=Cabot+Trail,+Pleasant+Bay,+NS+B0E+2P0">Resturants along the trail</a></p>  ' +
                 '  <p class="col-sm-12">Map to New Glasgow: <a target="_blank" href="https://www.google.ca/maps/dir/Petit+%C3%89tang/New+Glasgow/@46.0029848,-62.9269776,8z/am=t/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4b6716cef7c07c09:0x732b3b8015e3d6d!2m2!1d-60.966667!2d46.65!1m5!1m1!1s0x4b5c1ead6eb686d7:0x502581ef8cf0660!2m2!1d-62.6451191!2d45.5871702!3e0">Link</a></p>  '
         }
+    }, {
+        timelineInfo: {
+            badgeClass: 'info',
+            badgeIconClass: 'glyphicon-check',
+            dayOverview: '   <div class="col-sm-12">  ' +
+                '       <p><strong>Day Summary</strong></p>  ' +
+                '       <p><strong>Halifax and Peggy\'s Cove</strong></p>  ' +
+                '       <ul>  ' +
+                '           <li>Whether you stayed at Cape Breton or New Glasgow last night, you should be able to get Halifax around noon.</li>  ' +
+                '           <li>Take a nap and ready to visit the famous Peggy\'s Cove that has made its name to many megazines\' must see places around the world! (I did not know it was this famous years after left there...)</li>  ' +
+                '       </ul>  ' +
+                '  </div>  '
+        },
+        pointOfInterest: [{
+            title: 'Peggy\'s Cove',
+            details: '   <p class="col-sm-12">Time from Halifax: 1 hour</p><p class="col-sm-12">Tags: <i class="glyphicon glyphicon-tag"></i>Must See</p>  ' +
+                '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/dir/Dartmouth,+NS/Peggys+Cove,+NS/@44.6325387,-63.913889,11z/data=!4m13!4m12!1m5!1m1!1s0x4b5a23ddf20334b3:0xda5007be195731e7!2m2!1d-63.5677427!2d44.6652059!1m5!1m1!1s0x4b5a02e9d854b0e5:0x6b8306124c808566!2m2!1d-63.9125577!2d44.4934044">Peggy\'s Cove</a></p>  ' +
+                '   <p class="col-sm-12">Suggested Duration: 1 hour</p>  ' +
+                '   <p class="col-sm-12">Notes:</p>  ' +
+                '   <ul class="col-sm-12" style="padding-left:30px">  ' +
+                '       <li>You probbaly want to catch the sunset over there</li>  ' +
+                '       <li>There\'s a store that allows you to mail postcards, I actually wanted to mail you one but I did not know your address...</li>  ' +
+                '       <li>Get back before dark, I think some of the roads don\'t have lights, and choose a different route to drive back if you don\'t like to travel the same route like me.</li>  ' +
+                '  </ul>  ',
+            slides: [{
+                image: '../images/day6/6-1.png'
+            }, {
+                image: '../images/day6/6-2.png'
+            }, {
+                image: '../images/day6/6-3.png'
+            }, {
+                image: '../images/day6/6-4.png'
+            }]
+        }, {
+            title: 'The City of Halifax',
+            details: '   <p class="col-sm-12">Tags: <i class="glyphicon glyphicon-tag"></i>City</p>  ' +
+                '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/place/Halifax,+NS/@44.6493313,-63.692186,12z/data=!3m1!4b1!4m5!3m4!1s0x4b5a211407dbfac1:0x666be3a6438b2ddc!8m2!3d44.6488625!4d-63.5753196">Halifax, NS</a></p>  ' +
+                '   <p class="col-sm-12">Things to see:</p>  ' +
+                '   <ul class="col-sm-12" style="padding-left:30px">  ' +
+                '       <li><a target="_blank" href="https://www.tripadvisor.ca/Attraction_Review-g154976-d185440-Reviews-Halifax_Public_Gardens-Halifax_Halifax_Region_Nova_Scotia.html">Halifax Public Gardens</a></li>  ' +
+                '       <li>Base of the Royal Canadian Navy (only has one ghetto ship when I went there...)</li>  ' +
+                '       <li>The Harbour Hopper Tours (kind of fun actually)</li>  ' +
+                '       <li>Halifax Titanic Historical Tours (recommended by a lot of people, if you are very interested in the city\'s history and ofcourse, Titanic)</li>  ' +
+                '  </ul>  ',
+            slides: [{
+                image: '../images/day6/6-5.jpg',
+            }, {
+                image: '../images/day6/6-6.png',
+            }]
+        }],
+        generalInfo: {
+            details: '   <p class="col-sm-12">  ' +
+                '       <h4>General Information</h4>  ' +
+                '   </p>  ' +
+                '   <p class="col-sm-12"><strong>Hotel Booking (1 night)</strong></p>  ' +
+                '   <ul class="col-sm-12" style="padding-left:30px">  ' +
+                '       <li>Booking.com: <a target="_blank" href="http://www.booking.com/searchresults.html?dcid=12&label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaCeIAQGYATG4AQfIAQzYAQHoAQH4AQKoAgM&sid=35bfc12b24e337d34f25b3775fc632ea&sb=1&src=searchresults&src_elem=sb&error_url=http%3A%2F%2Fwww.booking.com%2Fsearchresults.html%3Flabel%3Dgen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaCeIAQGYATG4AQfIAQzYAQHoAQH4AQKoAgM%3Bsid%3D35bfc12b24e337d34f25b3775fc632ea%3Bdcid%3D12%3Bclass_interval%3D1%3Bdest_id%3D-570106%3Bdest_type%3Dcity%3Bdtdisc%3D0%3Bgroup_adults%3D2%3Bgroup_children%3D0%3Bhlrd%3D0%3Bhyb_red%3D0%3Binac%3D0%3Blabel_click%3Dundef%3Bnha_red%3D0%3Bno_rooms%3D1%3Boffset%3D0%3Bpostcard%3D0%3Bredirected_from_city%3D0%3Bredirected_from_landmark%3D0%3Bredirected_from_region%3D0%3Breview_score_group%3Dempty%3Broom1%3DA%252CA%3Bsb_price_type%3Dtotal%3Bscore_min%3D0%3Bsrc%3Dsearchresults%3Bsrc_elem%3Dsb%3Bss%3DNew%2520Glasgow%252C%2520Nova%2520Scotia%252C%2520Canada%3Bss_all%3D0%3Bss_raw%3Dnew%2520glasgow%3Bssb%3Dempty%3Bsshis%3D0%3Bssne_untouched%3DCabot%2520Trail%26%3B&ss=halifax&ssne=New+Glasgow&ssne_untouched=New+Glasgow&city=-570106&room1=A%2CA&no_rooms=1&group_adults=2&group_children=0&ss_raw=halifax&dest_id=&dest_type=">Link</a></li>  ' +
+                '       <li>Airbnb: <a target="_blank" href="https://www.airbnb.ca/s/Halifax--NS?guests=2&ss_id=tjs9k9ps&s_tag=pCYoRApr">Link</a></li>  ' +
+                '   </ul>  ' +
+                '  <p class="col-sm-12"><strong>Resturants</strong> - <a target="_blank" href="https://www.tripadvisor.ca/Restaurants-g154976-Halifax_Halifax_Region_Nova_Scotia.html">10 Best Resturants in Halifax</a></p>  '
+        }
     }]);
