@@ -27,6 +27,7 @@ body {
 /* Custom page header */
 
 .header {
+  text-align: center;
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
   /* Make the masthead heading the same height as the navigation */
@@ -35,6 +36,13 @@ body {
     margin-bottom: 0;
     line-height: 40px;
     padding-bottom: 19px;
+  }
+
+  .title {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    color: #db6aa4;
   }
 }
 
@@ -76,6 +84,8 @@ body {
 .day {
   .day-header {
     text-align: center;
+    color: #db6aa4;
+    font-family: 'Molle';
   }
 }
 
