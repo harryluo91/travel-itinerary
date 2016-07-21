@@ -4,7 +4,16 @@
             <h2>DAY 1</h2>
         </div>
     </div>
-    <div class="col-sm-12 day-content">
+    <div class="col-sm-12 question-card" ng-show="!sectionVisible[0]">
+        <div class="col-sm-12 question1">
+            <span>Question 1</span>
+        </div>
+        <div class="col-sm-12 answer1">
+            <input type="text" name="answer1" ng-model="inputAnswers[0]">
+            <button ng-click="checkAnswer(inputAnswers[0], 0)"></button>
+        </div>
+    </div>
+    <div class="col-sm-12 day-content" ng-show="sectionVisible[0]">
         <day-card day="dayDetails[0]"></day-card>
     </div>
     <div class="col-sm-12 day-header">
@@ -46,5 +55,21 @@
     </div>
     <div class="col-sm-12 day-content">
         <day-card day="dayDetails[5]"></day-card>
+    </div>
+    <div class="col-sm-12 day-header">
+        <div class="row">
+            <h2>DAY 7</h2>
+        </div>
+    </div>
+    <div class="col-sm-12 day-content">
+        <day-card day="dayDetails[6]"></day-card>
+    </div>
+    <div class="col-sm-12 day-header">
+        <div class="row">
+            <h2>DAY 8</h2>
+        </div>
+    </div>
+    <div class="col-sm-12 day-content">
+        <day-card day="dayDetails[7]"></day-card>
     </div>
 </div>

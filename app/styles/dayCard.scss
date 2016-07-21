@@ -1,33 +1,29 @@
 .timeline {
   position: inherit;
-  font-family: 'Waiting for the Sunrise', cursive;
-  font-size: 18px;
-
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
   h4 {
-    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
     color: #db6aa4;
   }
-
   .carousel-wrapper {
     margin: 20px 0px;
   }
   .timeline-inverted {
     float: right;
   }
-  &:before{
+  &:before {
     background-color: #db6aa4;
   }
-
   timeline-panel {
     border-color: #db6aa4;
     box-shadow: 0 1px 6px #db6aa4;
-
-    &:before{
+    &:before {
       border-left-color: #db6aa4;
       border-right-color: #db6aa4;
     }
   }
-
   timeline-badge {
     background-color: #db6aa4;
   }

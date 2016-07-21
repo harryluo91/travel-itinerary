@@ -413,4 +413,94 @@ angular
                 '   </ul>  ' +
                 '  <p class="col-sm-12"><strong>Resturants</strong> - <a target="_blank" href="https://www.tripadvisor.ca/Restaurants-g154976-Halifax_Halifax_Region_Nova_Scotia.html">10 Best Resturants in Halifax</a></p>  '
         }
+    }, {
+        timelineInfo: {
+            badgeClass: 'info',
+            badgeIconClass: 'glyphicon-check',
+            dayOverview: '   <div class="col-sm-12">  ' +
+                '       <p><strong>Day Summary</strong></p>  ' +
+                '       <p><strong>Halifax and Yarmouth</strong></p>  ' +
+                '       <ul>  ' +
+                '           <li>You will probably be very tired from all the driving and hiking during the past few days, rest well until you are ready to go</li>  ' +
+                '           <li>Continue to explore the city of Halifax if you did not get a lot of time yesterday, this is actually a very interesting city</li>  ' +
+                '           <li>You will be spending your night at Yarmouth today, there are not many things to see there so don\'t rush, as long as you get there before dark.</li>  ' +
+                '       </ul>  ' +
+                '  </div>  '
+        },
+        pointOfInterest: [{
+            title: 'Yarmouth',
+            details: '   <p class="col-sm-12">Time from Halifax: 3 hours</p>  ' +
+                '   <p class="col-sm-12">Tags: <i class="glyphicon glyphicon-tag"></i>City</p>  ' +
+                '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/dir/Halifax,+NS/Yarmouth,+NS/@44.3321242,-65.9910412,8z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4b5a211407dbfac1:0x666be3a6438b2ddc!2m2!1d-63.5753196!2d44.6488625!1m5!1m1!1s0x4b561107161eff55:0x502581ef9005160!2m2!1d-66.117382!2d43.8374576?hl=en">Yarmouth, NS</a></p>  ' +
+                '   <p class="col-sm-12">Things to see:</p>  ' +
+                '   <ul class="col-sm-12" style="padding-left:30px">  ' +
+                '       <li><a target="_blank" href="https://www.google.ca/maps/dir/Yarmouth,+NS/Cape+Forchu+Lightstation,+Yarmouth,+NS/@43.8233751,-66.1704744,13z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4b561107161eff55:0x502581ef9005160!2m2!1d-66.117382!2d43.8374576!1m5!1m1!1s0x4b560e3394de0b61:0x54ab59f07b927d1a!2m2!1d-66.1552202!2d43.7939483?hl=en">Cape Forchu Lightstation</a></li>  ' +
+                '       <li>Yarmouth County Museum and Archives</li>  ' +
+                '       <li>Frost Park</li>  ' +
+                '  </ul>  ',
+            slides: [{
+                image: 'images/day7/7-1.jpg'
+            }, {
+                image: 'images/day7/7-2.jpg'
+            }]
+        }],
+        generalInfo: {
+            details: '   <p class="col-sm-12">  ' +
+                '       <h4>General Information</h4>  ' +
+                '   </p>  ' +
+                '   <p class="col-sm-12"><strong>Hotel Booking (1 night)</strong></p>  ' +
+                '   <ul class="col-sm-12" style="padding-left:30px">  ' +
+                '       <li>Booking.com: <a target="_blank" href="http://www.booking.com/searchresults.html?label=gen173nr-1DCAEoggJCAlhYSDNiBW5vcmVmaCeIAQGYATG4AQfIAQzYAQPoAQH4AQKoAgM;sid=35bfc12b24e337d34f25b3775fc632ea;dcid=12;class_interval=1&dest_id=-576271&dest_type=city&dtdisc=0&group_adults=2&group_children=0&hlrd=0&hyb_red=0&inac=0&label_click=undef&nha_red=0&no_rooms=1&offset=0&postcard=0&redirected_from_city=0&redirected_from_landmark=0&redirected_from_region=0&review_score_group=empty&room1=A%2CA&sb_price_type=total&score_min=0&src=index&src_elem=sb&ss=Yarmouth%2C%20Nova%20Scotia%2C%20Canada&ss_all=0&ss_raw=yarmouth&ssb=empty&sshis=0&traveller=other&">Link</a></li>  ' +
+                '       <li>Airbnb: <a target="_blank" href="https://www.airbnb.ca/s/Yarmouth--NS?guests=2&ss_id=7694o87o&s_tag=FnhVv-6k">Link</a></li>  ' +
+                '   </ul>  ' +
+                '   <p class="col-sm-12"><strong>Resturants</strong> - <a target="_blank" href="https://www.tripadvisor.ca/Restaurants-g181761-Yarmouth_Southwest_Nova_Scotia_Nova_Scotia.html">10 Best Resturants in Yarmouth</a></p>  ' +
+                '   <p class="col-sm-12">Notes:</p>  ' +
+                '   <ul class="col-sm-12" style="padding-left:30px">  ' +
+                '       <li>You will be on a whale watching trip tomorrow, make sure to book it!</li>  ' +
+                '       <li>You will also need to take the ferry to go back to Saint John, check the schedule here:  ' +
+                '           <a a target="_blank" href="http://www.ferries.ca/nb-ns-ferry/schedule/">Link</a>  ' +
+                '       </li>  ' +
+                '  </ul>  '
+        }
+    }, {
+        timelineInfo: {
+            badgeClass: 'info',
+            badgeIconClass: 'glyphicon-check',
+            dayOverview: '   <div class="col-sm-12">  ' +
+                '       <p><strong>Day Summary</strong></p>  ' +
+                '       <p><strong>Whales!</strong></p>  ' +
+                '       <ul>  ' +
+                '           <li>Go watch the whales, 能不能看到就要看你的人品了~</li>  ' +
+                '       </ul>  ' +
+                '  </div>  '
+        },
+        pointOfInterest: [{
+            title: 'Brier Island Whale Watching Tour',
+            details: '   <p class="col-sm-12">Time from Yarmouth: 2 hours 41 mins</p>  ' +
+                '   <p class="col-sm-12">Tags: <i class="glyphicon glyphicon-tag"></i>Whale Watching</p>  ' +
+                '   <p class="col-sm-12">Map <i class="glyphicon glyphicon-map-marker"></i><a target="_blank" href="https://www.google.ca/maps/dir/Yarmouth,+NS/Brier+Island,+Westport,+NS/@44.2218114,-66.6521001,9z/am=t/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4b561107161eff55:0x502581ef9005160!2m2!1d-66.117382!2d43.8374576!1m5!1m1!1s0x4ca9cc3f78e05bb1:0x7154b84f603a3c3b!2m2!1d-66.3682814!2d44.2544294?hl=en">Brier Island, NS</a></p>  ' +
+                '   <p class="col-sm-12">Notes:</p>  ' +
+                '   <ul class="col-sm-12" style="padding-left:30px">  ' +
+                '       <li><strong>Remeber to wear something warm, it\'s pretty cold and windy on the boat!</strong></li>  ' +
+                '  </ul>  ',
+            slides: [{
+                image: 'images/day8/8-1.jpg'
+            }, {
+                image: 'images/day8/8-2.png'
+            }, {
+                image: 'images/day8/8-3.png'
+            }]
+        }],
+        generalInfo: {
+            details: '   <p class="col-sm-12">  ' +
+                '       <h4>General Information</h4>  ' +
+                '   </p>  ' +
+                '   <p><strong>Whale watching booking: <a target="_blank" href="http://brierislandwhalewatch.com/">Link</a></strong></p>  ' +
+                '   <p><strong>Ferry schedule: <a target="_blank" href="http://www.ferries.ca/nb-ns-ferry/schedule/">Link</a></strong></p>  ' +
+                '   <p class="col-sm-12"><strong>Hotel Booking (1 night)</strong></p>  ' +
+                '   <p class="col-sm-12">Notes:</p>  ' +
+                '   <ul class="col-sm-12" style="padding-left:30px">  ' +
+                '       <li>Refer to Day 1 for hotel booking and resturants</li>  ' +
+                '  </ul>  '
+        }
     }]);
