@@ -13,6 +13,11 @@ body {
   padding: 0;
 }
 
+.row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -37,7 +42,6 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
-
   .title {
     font-family: 'Tangerine', serif;
     font-size: 48px;
@@ -86,6 +90,58 @@ body {
     text-align: center;
     color: #db6aa4;
     font-family: 'Molle';
+    &.ng-hide-add,
+    &.ng-hide-remove {
+      transition: all linear 2.0s;
+    }
+    &.ng-hide {
+      opacity: 0;
+    }
+  }
+  .master-question {
+    text-align: center;
+  }
+  .day-content {
+    &.ng-hide-add,
+    &.ng-hide-remove {
+      transition: all linear 2.0s;
+    }
+    &.ng-hide {
+      opacity: 0;
+    }
+  }
+}
+
+.question-card {
+  text-align: center;
+  position: relative;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+  &.ng-hide-add,
+  &.ng-hide-remove {
+    transition: all linear 2.0s;
+  }
+  &.ng-hide {
+    opacity: 0;
+  }
+  .question {
+    h4 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 34px;
+    }
+    p {
+      font-family: 'Great Vibes', cursive;
+      font-size: 34px;
+    }
+  }
+  input {
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    width: 80%;
   }
 }
 

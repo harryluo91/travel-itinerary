@@ -1,19 +1,35 @@
 <div class='col-sm-12 day'>
-    <div class="col-sm-12 day-header">
+    <div class="row">
+        <div class="master-question" ng-show="!sectionVisible[8]">
+            <span>Master Code: </span>
+            <input type="text" name="masterCode" ng-model="inputAnswers[8]">
+            <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[8], 8)">Submit</button>
+        </div>
+    </div>
+    <div class="col-sm-12 question-card" ng-if="!sectionVisible[0] && !sectionVisible[8]">
+        <div class="row">
+            <div class="question">
+                <h4>1/8</h4>
+                <p>The name of a music band</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 answer1">
+                <input type="text" name="answer1" ng-model="inputAnswers[0]">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[0], 0)">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 day-header" ng-show="sectionVisible[0] || sectionVisible[8]">
         <div class="row">
             <h2>DAY 1</h2>
         </div>
     </div>
-    <div class="col-sm-12 question-card" ng-show="!sectionVisible[0]">
-        <div class="col-sm-12 question1">
-            <span>Question 1</span>
-        </div>
-        <div class="col-sm-12 answer1">
-            <input type="text" name="answer1" ng-model="inputAnswers[0]">
-            <button ng-click="checkAnswer(inputAnswers[0], 0)"></button>
-        </div>
-    </div>
-    <div class="col-sm-12 day-content" ng-show="sectionVisible[0]">
+    <div class="col-sm-12 day-content" ng-show="sectionVisible[0] || sectionVisible[8]">
         <day-card day="dayDetails[0]"></day-card>
     </div>
     <div class="col-sm-12 day-header">
@@ -21,7 +37,25 @@
             <h2>DAY 2</h2>
         </div>
     </div>
-    <div class="col-sm-12 day-content">
+    <div class="col-sm-12 question-card" ng-show="!sectionVisible[1] && !sectionVisible[8] && sectionVisible[0]">
+        <div class="row">
+            <div class="question">
+                <h4>2/8</h4>
+                <p>The name of a music band</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 answer1">
+                <input type="text" name="answer2" ng-model="inputAnswers[1]">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[1], 1)">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 day-content" ng-show="(sectionVisible[1] || sectionVisible[1]) && sectionVisible[0]">
         <day-card day="dayDetails[1]"></day-card>
     </div>
     <div class="col-sm-12 day-header">
