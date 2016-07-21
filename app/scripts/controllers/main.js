@@ -1,9 +1,15 @@
 angular.module('travelItineraryApp')
-  .controller('MainCtrl', ['$scope', 'DAY_DETAILS', function($scope, DAY_DETAILS) {
+  .controller('MainCtrl', ['$scope', 'DAY_DETAILS', 'jokeGenerator', function($scope, DAY_DETAILS, jokeGenerator) {
     $scope.dayDetails = DAY_DETAILS;
     $scope.masterCodeCorrect = false;
     $scope.sectionVisible = [false, false, false, false, false, false, false, false, false, ];
     $scope.inputAnswers = [];
+    console.log('hello');
+    jokeGenerator.getJoke().then(function (res) {
+      console.log(res);
+    }, function(err){
+      console.log(err);
+    })
 
     $scope.checkAnswer = function(val, index) {
       if (index === 8 && (val === 'our3wishes')) {
