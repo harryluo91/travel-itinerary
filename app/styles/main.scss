@@ -92,10 +92,13 @@ body {
     font-family: 'Molle';
     &.ng-hide-add,
     &.ng-hide-remove {
-      transition: all linear 2.0s;
+      transition: all ease-out 2.0s;
+      -webkit-filter: blur(0px);
+      -webkit-transition: all 2.0s ease-out;
     }
     &.ng-hide {
       opacity: 0;
+      -webkit-filter: blur(8px);
     }
   }
   .master-question {
@@ -104,10 +107,13 @@ body {
   .day-content {
     &.ng-hide-add,
     &.ng-hide-remove {
-      transition: all linear 2.0s;
+      transition: all ease-out 2.0s;
+      -webkit-filter: blur(0px);
+      -webkit-transition: all 2.0s ease-out;
     }
     &.ng-hide {
       opacity: 0;
+      -webkit-filter: blur(8px);
     }
   }
 }
