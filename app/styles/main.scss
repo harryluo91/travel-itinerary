@@ -18,6 +18,50 @@ body {
   margin-bottom: 10px;
 }
 
+// Loader Styles
+$blue: rgb(0, 155, 255);
+.jawn {
+  position: relative;
+  background-color: #F8E71C;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-top: 40px;
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  &:after {
+    left: -10px;
+    top: -5px;
+    background-color: #C7C2A6;
+    transform-origin: 15px 10px;
+    animation: axis 1s linear infinite;
+  }
+  &:before {
+    left: -25px;
+    top: -15px;
+    background-color: $blue;
+    transform-origin: 30px 20px;
+    animation: axis 2s linear infinite;
+  }
+}
+
+@keyframes axis {
+  0% {
+    transform: rotateZ(0deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotateZ(360deg) translate3d(0, 0, 0);
+  }
+}
+
+//Loader Styles End
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -143,6 +187,10 @@ body {
       font-family: 'Great Vibes', cursive;
       font-size: 34px;
     }
+  }
+  .joke {
+    font-family: 'Bad Script', cursive;
+    font-size: 28px;
   }
   input {
     font-family: 'Bad Script', cursive;

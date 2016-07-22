@@ -2,6 +2,7 @@
     <div class="row">
         <div class="master-question" ng-show="!sectionVisible[8]">
             <span>Master Code: </span>
+            <span ng-show="sectionVisible[7]">(If you ever run a diary, what would you name it?)</span>
             <input type="text" name="masterCode" ng-model="inputAnswers[8]">
             <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[8], 8)">Submit</button>
         </div>
@@ -10,7 +11,7 @@
         <div class="row">
             <div class="question">
                 <h4>1/8</h4>
-                <p>The name of a music band</p>
+                <p>"The name of a music band"</p>
             </div>
         </div>
         <div class="row">
@@ -23,6 +24,14 @@
                 <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[0], 0)">Submit</button>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12 loader" ng-if="!jokeLoaded">
+                <div class="jawn"></div>
+            </div>
+            <div class="col-sm-12 joke" ng-if="jokeLoaded">
+                <p>"{{joke}}"</p>
+            </div>
+        </div>
     </div>
     <div class="col-sm-12 day-header" ng-show="sectionVisible[0] || sectionVisible[8]">
         <div class="row">
@@ -32,16 +41,11 @@
     <div class="col-sm-12 day-content" ng-show="sectionVisible[0] || sectionVisible[8]">
         <day-card day="dayDetails[0]"></day-card>
     </div>
-    <div class="col-sm-12 day-header">
-        <div class="row">
-            <h2>DAY 2</h2>
-        </div>
-    </div>
-    <div class="col-sm-12 question-card" ng-show="!sectionVisible[1] && !sectionVisible[8] && sectionVisible[0]">
+    <div class="col-sm-12 question-card" ng-if="!sectionVisible[1] && !sectionVisible[8] && sectionVisible[0]">
         <div class="row">
             <div class="question">
                 <h4>2/8</h4>
-                <p>The name of a music band</p>
+                <p>"A day in April (in the format of 'MMDD')"</p>
             </div>
         </div>
         <div class="row">
@@ -54,56 +58,225 @@
                 <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[1], 1)">Submit</button>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12 loader" ng-if="!jokeLoaded">
+                <div class="jawn"></div>
+            </div>
+            <div class="col-sm-12 joke">
+                <p>{{joke}}</p>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-12 day-content" ng-show="(sectionVisible[1] || sectionVisible[1]) && sectionVisible[0]">
+    <div class="col-sm-12 day-header" ng-show="(sectionVisible[1] || sectionVisible[8]) && sectionVisible[0]">
+        <div class="row">
+            <h2>DAY 2</h2>
+        </div>
+    </div>
+    <div class="col-sm-12 day-content" ng-show="(sectionVisible[1] || sectionVisible[8]) && sectionVisible[0]">
         <day-card day="dayDetails[1]"></day-card>
     </div>
-    <div class="col-sm-12 day-header">
+    <div class="col-sm-12 question-card" ng-if="!sectionVisible[2] && !sectionVisible[8] && sectionVisible[1]">
+        <div class="row">
+            <div class="question">
+                <h4>3/8</h4>
+                <p>"The class you wanted to go the most in high school"</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 answer1">
+                <input type="text" name="answer2" ng-model="inputAnswers[2]">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[2], 2)">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 loader" ng-if="!jokeLoaded">
+                <div class="jawn"></div>
+            </div>
+            <div class="col-sm-12 joke">
+                <p>{{joke}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 day-header" ng-show="(sectionVisible[2] || sectionVisible[8]) && sectionVisible[1]">
         <div class="row">
             <h2>DAY 3</h2>
         </div>
     </div>
-    <div class="col-sm-12 day-content">
+    <div class="col-sm-12 day-content" ng-show="(sectionVisible[2] || sectionVisible[8]) && sectionVisible[1]">
         <day-card day="dayDetails[2]"></day-card>
     </div>
-    <div class="col-sm-12 day-header">
+    <div class="col-sm-12 question-card" ng-if="!sectionVisible[3] && !sectionVisible[8] && sectionVisible[2]">
+        <div class="row">
+            <div class="question">
+                <h4>4/8</h4>
+                <p>"The field trip"</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 answer1">
+                <input type="text" name="answer2" ng-model="inputAnswers[3]">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[3], 3)">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 loader" ng-if="!jokeLoaded">
+                <div class="jawn"></div>
+            </div>
+            <div class="col-sm-12 joke">
+                <p>{{joke}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 day-header" ng-show="(sectionVisible[3] || sectionVisible[8]) && sectionVisible[2]">
         <div class="row">
             <h2>DAY 4</h2>
         </div>
     </div>
-    <div class="col-sm-12 day-content">
+    <div class="col-sm-12 day-content" ng-show="(sectionVisible[3] || sectionVisible[8]) && sectionVisible[2]">
         <day-card day="dayDetails[3]"></day-card>
     </div>
-    <div class="col-sm-12 day-header">
+    <div class="col-sm-12 question-card" ng-if="!sectionVisible[4] && !sectionVisible[8] && sectionVisible[3]">
+        <div class="row">
+            <div class="question">
+                <h4>5/8</h4>
+                <p>"下辈子的轮回"的下一句</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 answer1">
+                <input type="text" name="answer2" ng-model="inputAnswers[4]">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[4], 4)">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 loader" ng-if="!jokeLoaded">
+                <div class="jawn"></div>
+            </div>
+            <div class="col-sm-12 joke">
+                <p>{{joke}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 day-header" ng-show="(sectionVisible[4] || sectionVisible[8]) && sectionVisible[3]">
         <div class="row">
             <h2>DAY 5</h2>
         </div>
     </div>
-    <div class="col-sm-12 day-content">
+    <div class="col-sm-12 day-content" ng-show="(sectionVisible[4] || sectionVisible[8]) && sectionVisible[3]">
         <day-card day="dayDetails[4]"></day-card>
     </div>
-    <div class="col-sm-12 day-header">
+    <div class="col-sm-12 question-card" ng-if="!sectionVisible[5] && !sectionVisible[8] && sectionVisible[4]">
+        <div class="row">
+            <div class="question">
+                <h4>6/8</h4>
+                <p>"The last day"</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 answer1">
+                <input type="text" name="answer2" ng-model="inputAnswers[5]">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[5], 5)">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 loader" ng-if="!jokeLoaded">
+                <div class="jawn"></div>
+            </div>
+            <div class="col-sm-12 joke">
+                <p>{{joke}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 day-header" ng-show="(sectionVisible[5] || sectionVisible[8]) && sectionVisible[4]">
         <div class="row">
             <h2>DAY 6</h2>
         </div>
     </div>
-    <div class="col-sm-12 day-content">
+    <div class="col-sm-12 day-content" ng-show="(sectionVisible[5] || sectionVisible[8]) && sectionVisible[4]">
         <day-card day="dayDetails[5]"></day-card>
     </div>
-    <div class="col-sm-12 day-header">
+    <div class="col-sm-12 question-card" ng-if="!sectionVisible[6] && !sectionVisible[8] && sectionVisible[5]">
+        <div class="row">
+            <div class="question">
+                <h4>7/8</h4>
+                <p>"Your 3 sizes"</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 answer1">
+                <input type="text" name="answer2" ng-model="inputAnswers[6]">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[6], 6)">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 loader" ng-if="!jokeLoaded">
+                <div class="jawn"></div>
+            </div>
+            <div class="col-sm-12 joke">
+                <p>{{joke}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 day-header" ng-show="(sectionVisible[6] || sectionVisible[8]) && sectionVisible[5]">
         <div class="row">
             <h2>DAY 7</h2>
         </div>
     </div>
-    <div class="col-sm-12 day-content">
+    <div class="col-sm-12 day-content" ng-show="(sectionVisible[6] || sectionVisible[8]) && sectionVisible[5]">
         <day-card day="dayDetails[6]"></day-card>
     </div>
-    <div class="col-sm-12 day-header">
+    <div class="col-sm-12 question-card" ng-if="!sectionVisible[7] && !sectionVisible[8] && sectionVisible[6]">
+        <div class="row">
+            <div class="question">
+                <h4>8/8</h4>
+                <p>"Your ex ex ex... boyfriend's cell phone number at the time"</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 answer1">
+                <input type="text" name="answer2" ng-model="inputAnswers[7]">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <button class="btn btn-primary" ng-click="checkAnswer(inputAnswers[7], 7)">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 loader" ng-if="!jokeLoaded">
+                <div class="jawn"></div>
+            </div>
+            <div class="col-sm-12 joke">
+                <p>{{joke}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 day-header" ng-show="(sectionVisible[7] || sectionVisible[8]) && sectionVisible[7]">
         <div class="row">
             <h2>DAY 8</h2>
         </div>
     </div>
-    <div class="col-sm-12 day-content">
+    <div class="col-sm-12 day-content" ng-show="(sectionVisible[7] || sectionVisible[8]) && sectionVisible[7]">
         <day-card day="dayDetails[7]"></day-card>
     </div>
 </div>

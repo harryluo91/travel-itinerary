@@ -8,23 +8,22 @@
  * Service in the travelItineraryApp.
  */
 angular.module('travelItineraryApp')
-  .service('jokeGenerator', ['$http', '$q', function ($http, $q) {
+  .service('jokeGenerator', ['$http', '$q', function($http, $q) {
     // AngularJS will instantiate a singleton by calling "new" on this function
-    this.getJoke = function(){
+    this.getJoke = function() {
       var deferred = $q.defer();
       $http({
         method: 'GET',
-        url: 'https://webknox-jokes.p.mashape.com/jokes/random?maxLength=100',
+        url: 'https://webknox-jokes.p.mashape.com/jokes/oneLiner',
         headers: {
-          'X-Mashape-Key': 'mRuFjyEmZWmshejQ6VtlocJnbjDsp1gamHwjsnbuSvp4aYBebn',
-          'Accept': 'application/json'
+          'X-Mashape-Key': 'mRuFjyEmZWmshejQ6VtlocJnbjDsp1gamHwjsnbuSvp4aYBebn'
         }
       }).then(function successCallback(res) {
-          deferred.resolve(res);
-        }, function errorCallback(err) {
-          deferred.reject(err);
-        });
+        deferred.resolve(res);
+      }, function errorCallback(err) {
+        deferred.reject(err);
+      });
 
-        return deferred.promise;
+      return deferred.promise;
     };
   }]);
